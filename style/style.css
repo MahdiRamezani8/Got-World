@@ -11,4 +11,30 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: yekan;
+}
+
+main{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(../image/landing.jpg);
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    direction: rtl;
+    background: linear-gradient(180deg, #000, #00000000);
+}
+
+nav>h3{
+    margin: 0 15px;
+}
+
+#title{
+    position: absolute;
+    top: 140px;
+    left: 5%;
+    font-size: 25px;
 }
