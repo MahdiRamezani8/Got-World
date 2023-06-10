@@ -11,6 +11,8 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
     font-family: yekan;
 }
 
@@ -33,8 +35,33 @@ nav>h3{
 }
 
 #title{
-    position: absolute;
-    top: 140px;
-    left: 5%;
+    margin-top: 60px;
+    margin-left: 5%;
     font-size: 25px;
+}
+
+#search-box{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+}
+
+#search-box>input{
+    direction: rtl;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: larger;
+}
+
+#search-box>button{
+    width: 50px;
+    height: 50px;
+    background-color: #4edfb4c2;
+    position: absolute;
+    left: -0.7px;
+    border-radius: 50px;
 }
