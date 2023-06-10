@@ -8,6 +8,10 @@
     src: url(../fonts/Minion\ Variable\ Concept.otf);
 }
 
+:root{
+    --color-text: #4edfb4c2;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -32,6 +36,12 @@ nav{
 
 nav>h3{
     margin: 0 15px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+nav>h3:hover{
+    color: var(--color-text);
 }
 
 #title{
@@ -64,4 +74,5 @@ nav>h3{
     position: absolute;
     left: -0.7px;
     border-radius: 50px;
+    cursor: pointer;
 }
