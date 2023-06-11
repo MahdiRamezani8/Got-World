@@ -61,7 +61,7 @@ nav>h3:hover {
 }
 
 #search-box {
-    margin: 200px auto 0 auto;
+    margin: 20vh auto 0 auto;
     width: 45%;
 }
 
@@ -87,6 +87,5 @@ nav>h3:hover {
     position: absolute;
     width: 100%;
     height: 100px;
-    background-color: #fff;
     background: linear-gradient(180deg, transparent, #000 50%, transparent);
 }
