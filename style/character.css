@@ -1,0 +1,44 @@
+@import "nav.css";
+
+body{
+    background: #000812;
+    color: #fff;
+}
+#banner{
+    width: 95vw;
+    margin: 20px auto;
+    display: block;
+}
+
+#content{
+    width: 95vw;
+    display: flex;
+    margin: 20px auto;
+    direction: rtl;
+    flex-direction:row-reverse ;
+}
+#content #mainInfo{
+    flex: 2;
+    border: 1px solid #eee;
+    margin-right: 20px;
+    padding: 10px;
+}
+#content #mainInfo span {
+    display: inline-block;
+    padding: 5px;
+
+}
+#mainInfo .row {
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+}
+#content #description{
+    flex: 5;
+}
+
+
+#content #houseFlag{
+    width: 95%;
+    margin: 5px auto;
+
+}
