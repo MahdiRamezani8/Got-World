@@ -42,3 +42,14 @@ body{
     margin: 5px auto;
 
 }
+
+@media only screen and (max-width: 767px) {
+    body{
+        display: none;
+    }
+    #content{
+        font-size: 2px !important;
+        flex-direction: column;
+        text-align: center;
+    }
+}
