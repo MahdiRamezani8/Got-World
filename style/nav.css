@@ -39,3 +39,10 @@ nav>h3 {
 nav>h3:hover {
     color: var(--color-text);
 }
+
+@media screen and (max-width: 480px) {
+    h3{
+        color: aqua;
+        font-size: 1px !important;
+    }
+  }
