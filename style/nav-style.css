@@ -1,0 +1,104 @@
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/Yekan.ttf);
+
+}
+
+@font-face {
+    font-family: minion;
+    src: url(../fonts/Minion\ Variable\ Concept.otf);
+}
+
+:root {
+    --color-text: #a8abe1c2;
+    --dark1: #03002e;
+    --dark2: #010048;
+    --dark3: #010057;
+    --dark4: #02006c;
+    --dark5: #090088;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: yekan;
+    list-style: none;
+    font-size: calc(15px + 0.390625vw) !important;
+    box-sizing: border-box;
+}
+
+#menu-container {
+    width: 100%;
+    color: #fff;
+    background-color: var(--dark1);
+    min-height: 55px;
+
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    min-height: 55px;
+    background-color: var(--dark1);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0 20px;
+
+}
+
+#menu>nav {
+    display: inline-flex;
+}
+
+#menu>nav>i {
+    display: none;
+    cursor: pointer;
+}
+
+#menu>nav>ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+#menu>nav>ul>li {
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+#menu>nav>ul>li:hover {
+    color: var(--color-text);
+}
+
+@media(max-width:768px) {
+    ul {
+        position: fixed;
+        right: -100%;
+        top: 50px;
+        transition: .5s;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark1);
+        width: 50%;
+        padding: 20px;
+        border-radius: 0 0 0 5px;
+    }
+
+    i {
+        display: block !important;
+    }
+}
+
+.active {
+    right: 0;
+}
