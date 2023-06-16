@@ -1,4 +1,4 @@
-@import "nav.css";
+@import "nav-style.css";
 
 body{
     background: #000812;
@@ -8,6 +8,7 @@ body{
     width: 95vw;
     margin: 20px auto;
     display: block;
+    margin-top: 100px;
 }
 
 #content{
@@ -51,5 +52,8 @@ body{
         font-size: 2px !important;
         flex-direction: column;
         text-align: center;
+    }
+    #mainInfo{
+        margin-bottom: 50px;
     }
 }
