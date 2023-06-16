@@ -3,7 +3,8 @@
 
 header {
     width: 100%;
-    background-color: var(--dark2);
+    background-color: var(--dark1);
+    padding: 30px 0;
 }
 
 #title {
@@ -18,16 +19,33 @@ header {
 #title>p:last-child{
     font-size: calc(30px + 0.390625vw) !important;
 }
-/* #background {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
- object-fit:; 
-} */
 
-/* #search-box {
-    margin: 20vh auto 0 auto;
-    width: 45%;
+#center-of-head{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#center-of-head>img{
+    width: 50%;
+}
+
+@media(max-width: 1100px){
+    #center-of-head{
+        justify-content: center;
+    }
+    #center-of-head>img{
+        width: 70%;
+    }
+}
+
+
+ #search-box {
+    margin: 0 auto;
+    width: 80%;
 }
 
 #search-box>input {
@@ -48,8 +66,16 @@ header {
     cursor: pointer;
     text-align: center;
     padding-top: 2px;
+
 }
 
+@media(max-width:768px){
+    #search-box>input{
+        font-size: .8rem !important;
+    }
+}
+
+/*
 #transparent {
     position: absolute;
     width: 100%;
