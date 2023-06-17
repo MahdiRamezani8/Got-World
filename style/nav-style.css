@@ -11,11 +11,12 @@
 
 :root {
     --color-text: #a8abe1c2;
-    --dark1: #03002e;
-    --dark2: #010048;
-    --dark3: #010057;
-    --dark4: #02006c;
-    --dark5: #090088;
+    --dark1: #262626;
+    --dark2: #353535;
+    --dark3: #555;
+    --dark4: #666;
+    --dark5: #888;
+    --blue: #1c2f40;
 }
 
 * {
@@ -32,7 +33,7 @@
 #menu-container {
     width: 100%;
     color: #fff;
-    background-color: var(--dark1);
+    background-color: var(--dark2);
     min-height: 55px;
 
 }
@@ -41,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     min-height: 55px;
     background-color: var(--dark1);
     position: fixed;
