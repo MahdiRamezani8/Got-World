@@ -30,11 +30,13 @@
 }
 
 #menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     color: #fff;
     background-color: var(--dark1);
     min-height: 55px;
-
 }
 
 #menu {
@@ -81,6 +83,9 @@
 }
 
 @media(max-width:768px) {
+    #menu{
+        width: 100%;
+    }
     ul {
         position: fixed;
         right: -100%;

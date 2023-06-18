@@ -2,10 +2,6 @@ const $ = document;
 const getId = id => $.getElementById(id)
 const getClass = classE => $.getElementById(classE)
 
-// // to comput distance between transparent div and windows top in px
-// const transparentTopHandler = () => getId('transparent').style.top = (parseInt(getComputedStyle(getId('background')).getPropertyValue('height')) -50) + 'px';
-// window.addEventListener('load', transparentTopHandler)
-// window.addEventListener('resize', transparentTopHandler)
 const searchInput = getId('search-input')
 window.addEventListener('load', searchInputPlaceholder)
 window.addEventListener('resize', searchInputPlaceholder)
@@ -14,3 +10,24 @@ function searchInputPlaceholder(){
         searchInput.placeholder = "درباره چی میخوای بدونی؟"
     }
 }
+
+function softScroll (pageNick) {
+    $('.' + pageNick + ' a[href*="#"]')
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function (event) {
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 500, function () {});
+            }
+        }
+    });
+};

@@ -6,45 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Got World</title>
     <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
-<header>
-    <div id="menu-container">
-        <div id="menu">
-            <h1>GOT World</h1>
-            <nav>
-                <ul id="menu-ul">
-                    <li>درباره</li>
-                    <li>مکان‌ها</li>
-                    <li>خاندان‌ها</li>
-                    <li>کاراکترها</li>
-                </ul>
-                <i class="fa fa-navicon" id="open-menu"></i>
-            </nav>
+    <header>
+        <div id="menu-container">
+            <div id="menu">
+                <h1>GOT World</h1>
+                <nav>
+                    <ul id="menu-ul">
+                        <li>درباره</li>
+                        <li>مکان‌ها</li>
+                        <li>خاندان‌ها</li>
+                        <li>کاراکترها</li>
+                    </ul>
+                    <i class="fa fa-navicon" id="open-menu"></i>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div id="center-of-head">
-        <div id="title">
-            <p>Game of Thrones </p>
-            <p>Novel by George R. R. Martin</p>
+        <div id="center-of-head">
+            <div id="title">
+                <p>Game of Thrones </p>
+                <p>Novel by George R. R. Martin</p>
+            </div>
+            <img src="image/00.png" alt="john snow">
         </div>
-        <img src="image/00.png" alt="john snow">
-    </div>
-    <div id="search-box">
-        <button id="search-icon"><i class="fa fa-search"></i></button>
-        <input type="search" name="" placeholder="درباره چی میخوای بدونی؟ اینجا بنویس" id="search-input">
-    </div>
-</header>
+        <div id="search-box">
+            <button id="search-icon"><i class="fa fa-search"></i></button>
+            <input type="search" name="" placeholder="درباره چی میخوای بدونی؟ اینجا بنویس" id="search-input">
+        </div>
+        <button id="scroll-to-main">
+            scroll
+            <!-- <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a> -->
+        </button>
+    </header>
+    <!-- Swiper
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div> -->
+    <script src="script/swiper-bundle.min.js"></script>
+    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/nav-script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
 
-<!-- <script src="script/swiper-bundle.min.js"></script> -->
-<script type="module" src="script/script.js"></script>
-<script type="module" src="script/nav-script.js"></script>
-
-<script src=""></script>
+    <script src=""></script>
 </body>
 
 </html>
