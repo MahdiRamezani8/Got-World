@@ -92,7 +92,7 @@
         right: -100%;
         top: 50px;
         transition: .5s;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         background-color: var(--dark1);
         width: 50%;
