@@ -9,7 +9,7 @@ function searchInputPlaceholder(){
     if (window.innerWidth < 375) {
         searchInput.placeholder = "درباره چی میخوای بدونی؟"
     }
-<<<<<<< HEAD
+
 }
 
 // function softScroll (pageNick) {
@@ -49,6 +49,3 @@ function pageScroll() {
 document.getElementById('scroll-arrow').addEventListener('click',()=>{
     pageScroll()
 })
-=======
-}
->>>>>>> 355529718768358bf60c4a0e433c85f21440ecd9
