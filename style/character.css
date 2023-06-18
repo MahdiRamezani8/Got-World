@@ -1,7 +1,7 @@
 @import "nav-style.css";
 
 body{
-    background: #000812;
+    background: var(--dark2);
     color: #fff;
 }
 #banner{
