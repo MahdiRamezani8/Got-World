@@ -36,6 +36,11 @@
     box-sizing: border-box;
 }
 
+a{
+    all: unset;
+    cursor: pointer;
+}
+
 #menu-container {
     position: fixed;
     top: 0;

@@ -20,7 +20,7 @@
                         <li>درباره</li>
                         <li>مکان‌ها</li>
                         <li>خاندان‌ها</li>
-                        <li>کاراکترها</li>
+                        <li onclick="pageScroll(window.innerHeight)">کاراکترها</li>
                     </ul>
                     <i class="fa fa-navicon" id="open-menu"></i>
                 </nav>
@@ -44,7 +44,7 @@
     </header>
 
     <main id="main">
-        <h1 class="slider-title">کاراکترها ...</h1>
+        <h1 class="slider-title" id="char-tit">کاراکترها ...</h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper" id="char-swiper-wrapper">
             </div>
@@ -62,40 +62,34 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div id="lists">
+            <ul>
+                <li>صفحه ها</li>
+                <li><a href="">کاراکترها </a></li>
+                <li><a href="">خاندان‌ها </a></li>
+                <li><a href="">مکان‌ها</a></li>
+            </ul>
+            <ul>
+                <li>شبکه های احتماعی</li>
+                <li><a href="https://youtube.com/@CreativityHousee" target="_blank"><i class="fa fa-youtube-play"></i> یوتیوب</a></li>
+                <li><a href="https://github.com/creativityHousee" target="_blank"><i class="fa fa-github"></i>گیت هاب</a></li>
+                <li><a href="https://t.me/Silicon_Valley_Ch" target="_blank"><i class="fa fa-telegram"></i>تلگرام</a></li>
+            </ul>
+            <ul>
+                <li>تکنولوژی ها</li>
+                <li>javaScript</li>
+                <li>Php</li>
+            </ul>
+        </div>
+        <p>
+            this website is a open-source project, developed by <a href="https://mohammadrostamidev.ir">mohamadRostami</a> & mahdiRamezani
+        </p>
+    </footer>
     <script src="./script/swiper-bundle.min.js"></script>
     <script type="module" src="./script/script.js"></script>
     <script type="module" src="./script/nav-script.js"></script>
     <script type="module" src="./script/data-base-justForTest.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
-
-    <script src=""></script>
 </body>
 
 </html>

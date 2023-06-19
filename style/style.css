@@ -256,10 +256,47 @@ main {
 
 }
 
-
-/* .swiper-slide img {
-    display: block;
+footer {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+    background-color: var(--dark1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff !important;
+    font-family: yekan;
+}
+
+#lists {
+    direction: rtl;
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#lists>ul>li {
+    cursor: pointer;
+}
+
+#lists>ul>li:first-child {
+    margin-right: -25px;
+    font-weight: bold;
+    font-size: 1.2rem !important;
+}
+
+#lists>ul:last-child>li:last-child {
+    font-family: roboto;
+}
+
+#lists>ul:last-child>li:nth-last-child(2) {
+    font-family: roboto;
+}
+
+#lists>ul>li>a>i {
+    padding: 0 15px;
+}
+
+footer>p {
+    font-family: roboto;
+}
