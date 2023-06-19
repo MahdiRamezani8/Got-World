@@ -7,6 +7,11 @@
 @font-face {
     font-family: minion;
     src: url(../fonts/Minion\ Variable\ Concept.otf);
+
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
 }
 
 :root {
@@ -16,6 +21,7 @@
     --dark3: #555;
     --dark4: #666;
     --dark5: #888;
+    --dark6: #c6c6c6;
     --blue: #1c2f40;
 }
 
@@ -38,6 +44,7 @@
     color: #fff;
     background-color: var(--dark1);
     min-height: 55px;
+    z-index: 99;
 }
 
 #menu {
