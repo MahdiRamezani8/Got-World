@@ -9,30 +9,7 @@ function searchInputPlaceholder(){
     if (window.innerWidth < 375) {
         searchInput.placeholder = "درباره چی میخوای بدونی؟"
     }
-
 }
-
-// function softScroll (pageNick) {
-//     $('.' + pageNick + ' a[href*="#"]')
-//     .not('[href="#"]')
-//     .not('[href="#0"]')
-//     .click(function (event) {
-//         if (
-//             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-//             location.hostname == this.hostname
-//         ) {
-//             var target = $(this.hash);
-//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//             if (target.length) {
-//                 event.preventDefault();
-//                 $('html, body').animate({
-//                     scrollTop: target.offset().top
-//                 }, 500, function () {});
-//             }
-//         }
-//     });
-// };
-
 
 function pageScroll() {
     let i = window.scrollY;
@@ -46,6 +23,15 @@ function pageScroll() {
 }
 
 
-document.getElementById('scroll-arrow').addEventListener('click',()=>{
-    pageScroll()
-})
+document.getElementById('scroll-arrow').addEventListener('click', pageScroll)
+
+const characters = [
+    {id: 1, name: "john snow", family: "stark"},
+    {id: 2, name: "tyrion lanister", family: "lanister"},
+    {id: 3, name: "daenerys targaryen", family: "targaryen"},
+    {id: 4, name: "jaime lanister", family: "lanister"},
+    {id: 5, name: "arya stark", family: "stark"},
+    {id: 6, name: "cersie lanister", family: "lanister"},
+    {id: 7, name: "robb stark", family: "stark"},
+    {id: 8, name: "sansa stark", family: "stark"}
+]
