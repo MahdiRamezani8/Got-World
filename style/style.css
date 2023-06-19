@@ -165,16 +165,19 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     }
 }
 
-
-.swiper {
+main{
     width: 100%;
 }
 
+.swiper {
+    width:80%;
+}
+
 .swiper-slide {
-    height: 250px;
+    height: 250px !important;
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #a27a7a;
     display: flex;
     justify-content: center;
     align-items: center;
