@@ -11,12 +11,13 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #houses .house{
     /*background: #1c2f40;*/
-    min-width: 250px;
+    /*max-width: 400px;*/
+    /*min-width: 250px;*/
     height: 400px;
     text-align: center;
     padding: 20px;
@@ -55,3 +56,16 @@
     background: #F2CD00;
 }
 
+@media (max-width: 1366px) {
+    #houses .house{
+        max-width: 300px;
+        flex-basis: 300px;
+    }
+}
+@media (max-width: 768px) {
+    #houses .house{
+        min-width: 400px;
+        max-width: 400px;
+        flex-basis: 400px;
+    }
+}
