@@ -1,0 +1,57 @@
+@import "nav-style.css";
+
+#houses{
+    width: 90vw;
+    height: 20vh;
+    margin : 100px auto;
+    text-align: right;
+}
+
+#houses #housesList{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#houses .house{
+    /*background: #1c2f40;*/
+    min-width: 250px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px #333;
+    flex: 1;
+
+
+}
+#houses .house img{
+    width: 50%;
+
+
+}
+
+
+
+#houses .house.stark{
+    background: #9A9B96;
+}
+#houses .house.lannister{
+    background: #FFD700
+}
+#houses .house.martell{
+    background: #E98421;
+}
+#houses .house.targaryen{
+    background: #101010;
+}
+#houses .house.arryn{
+    background: #1087E1;
+}
+#houses .house.tully{
+    background: #AE3434;
+}
+#houses .house.baratheon{
+    background: #F2CD00;
+}
+
