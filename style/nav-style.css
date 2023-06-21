@@ -101,7 +101,7 @@ a{
     #menu{
         width: 100%;
     }
-    ul {
+    #menu>nav>ul {
         position: fixed;
         right: -100%;
         top: 50px;
@@ -114,7 +114,7 @@ a{
         border-radius: 0 0 0 5px;
     }
 
-    i {
+    #menu>nav>i {
         display: block !important;
     }
 }
