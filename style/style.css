@@ -43,7 +43,17 @@ header {
     }
 
     #center-of-head>img {
-        width: 100%;
+        width: 50%;
+    }
+}
+
+@media(max-width: 480px){
+    #title>p:first-child {
+        font-size: calc(35px + 0.390625vw) !important;
+    }
+    
+    #title>p:last-child {
+        font-size: calc(20px + 0.390625vw) !important;
     }
 }
 
