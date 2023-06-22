@@ -2,9 +2,7 @@ import {
     characters
 } from "./data-base-justForTest.js";
 
-const $ = document;
-const getId = id => $.getElementById(id)
-const getClass = classE => $.querySelectorAll(classE)
+import { $, getClass, getId } from "./mainScript.js";
 
 const searchInput = getId('search-input')
 window.addEventListener('load', searchInputPlaceholder)
@@ -31,7 +29,7 @@ getId('scroll-arrow').addEventListener('click', () => pageScroll(window.innerHei
 
 const charSwiperWrapper = getId('char-swiper-wrapper')
 characters.forEach(character => {
-    charSwiperWrapper.insertAdjacentHTML('beforeEnd', '<div class="swiper-slide"> <img src="' + character.imgAddress + '" alt="" id="char-profile"> <h1 id="char-name">' + character.name + '</h1> <div id="actions"><i class="fa fa-heart-o"></i> <button id="see-more-about-char">see more</button> </div> </div>');
+    charSwiperWrapper.insertAdjacentHTML('beforeEnd', '<div class="swiper-slide"> <img src="' + character.imgAddress + '" alt="" id="char-profile"> <h1 id="char-name">' + character.name + '</h1> <div id="actions"><i class="fa fa-heart-o"></i> <a id="see-more-about-char" target="_blank" href="character.html?info=' + encodeURIComponent(JSON.stringify(character)) + '">see more</a> </div> </div>');
 });
 
 var swiper = new Swiper(".mySwiper", {

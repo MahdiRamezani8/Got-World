@@ -1,26 +1,25 @@
 @import "nav-style.css";
+@import "footer.css";
 
 body{
     background: var(--dark2);
     color: #fff;
 }
 #banner{
-    width: 95vw;
-    margin: 20px auto;
     display: block;
-    margin-top: 100px;
+    width: 80%;
+    margin: calc(55px + 40px) auto 0 auto;
 }
 
 #content{
-    width: 95vw;
+    width: 80%;
     display: flex;
-    margin: 20px auto;
+    justify-content: space-between;
+    margin: 100px auto;
     direction: rtl;
-    flex-direction:row-reverse ;
 }
 #content #mainInfo{
     flex: 2;
-    border: 1px solid #eee;
     margin-right: 20px;
     padding: 10px;
 }
@@ -44,14 +43,11 @@ body{
 
 }
 
-@media only screen and (max-width: 767px) {
-    body{
-        /*display: none;*/
-    }
+@media(max-width: 767px) {
     #content{
         font-size: 2px !important;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
     #mainInfo{
         margin-bottom: 50px;

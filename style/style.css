@@ -227,6 +227,7 @@ main {
     color: var(--blue);
     transition: .2s;
     padding: 3px;
+    text-align: center;
 }
 
 #see-more-about-char:hover {
