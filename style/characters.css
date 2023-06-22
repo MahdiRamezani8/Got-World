@@ -2,6 +2,7 @@
 @import "footer.css";
 body{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 #searchBox{
     margin-top: 100px;
@@ -35,9 +36,11 @@ body{
 }
 
 #houses .house{
-    /*background: #1c2f40;*/
-    /*max-width: 400px;*/
-    /*min-width: 250px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
     height: 400px;
     text-align: center;
     padding: 20px;
@@ -50,6 +53,10 @@ body{
     width: 50%;
 
 
+}
+
+#houses .house span{
+    color: #fff;
 }
 
 
@@ -84,7 +91,7 @@ body{
 }
 @media (max-width: 768px) {
     #searchBox input{
-        width: 80%;
+        width: 80%      ;
     }
     #houses .house{
         min-width: 400px;
