@@ -4,11 +4,16 @@
 body{
     background: var(--dark2);
     color: #fff;
+<<<<<<< HEAD
 }
 #banner{
     display: block;
     width: 80%;
     margin: calc(55px + 40px) auto 0 auto;
+=======
+    padding: 100px 0; 
+    box-sizing: border-box;
+>>>>>>> c6520c4a236a623010800f258235b40c4e6d4de7
 }
 
 #content{
