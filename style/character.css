@@ -3,12 +3,8 @@
 body{
     background: var(--dark2);
     color: #fff;
-}
-#banner{
-    width: 95vw;
-    margin: 20px auto;
-    display: block;
-    margin-top: 100px;
+    padding: 100px 0; 
+    box-sizing: border-box;
 }
 
 #content{
