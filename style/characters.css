@@ -3,6 +3,23 @@
 body{
     min-height: 100vh;
 }
+#searchBox{
+    margin-top: 100px;
+    text-align: center;
+
+}
+#searchBox input{
+    direction: rtl;
+    line-height: 60px;
+    width: 50%;
+    height: 60px;
+    box-shadow: 0 0 5px #121212;
+    border-radius: 25px;
+    padding: 30px;
+}
+#searchBox input:focus{
+    box-shadow: 0 0 8px #001537;
+}
 #houses{
     width: 90vw;
     margin : 100px auto;
@@ -66,6 +83,9 @@ body{
     }
 }
 @media (max-width: 768px) {
+    #searchBox input{
+        width: 80%;
+    }
     #houses .house{
         min-width: 400px;
         max-width: 400px;
