@@ -3,7 +3,7 @@ const characters = [{
         name: "john snow",
         family: "stark",
         imgAddress: "image/characters/john-snow.png",
-        familyImgAddress: "image/families/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.jpg",
         liked: false,
     },
     {
@@ -11,7 +11,7 @@ const characters = [{
         name: "tyrion lanister",
         family: "lanister",
         imgAddress: "image/characters/tyrion-lannister.png",
-        familyImgAddress: "image/families/House_Lannister.webp",
+        familyImgAddress: "image/houses/House_Lannister.webp",
         liked: false,
     },
     {
@@ -19,7 +19,7 @@ const characters = [{
         name: "daenerys",
         family: "targaryen",
         imgAddress: "image/characters/daenerys-targaryen.png",
-        familyImgAddress: "image/families/House_Targaryen.webp",
+        familyImgAddress: "image/houses/House_Targaryen.webp",
         liked: false,
 
     },
@@ -28,7 +28,7 @@ const characters = [{
         name: "jaime lanister",
         family: "lanister",
         imgAddress: "image/characters/jaime-lanister.png",
-        familyImgAddress: "image/families/House_Lannister.webp",
+        familyImgAddress: "image/houses/House_Lannister.webp",
         liked: false,
     },
     {
@@ -36,7 +36,7 @@ const characters = [{
         name: "arya stark",
         family: "stark",
         imgAddress: "image/characters/arya-stark.png",
-        familyImgAddress: "image/families/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.jpg",
         liked: false,
     },
     {
@@ -44,7 +44,7 @@ const characters = [{
         name: "cersie lanister",
         family: "lanister",
         imgAddress: "image/characters/cersei-lanister.png",
-        familyImgAddress: "image/families/House_Lannister.webp",
+        familyImgAddress: "image/houses/House_Lannister.webp",
         liked: false,
     },
     {
@@ -52,7 +52,7 @@ const characters = [{
         name: "robb stark",
         family: "stark",
         imgAddress: "image/characters/robb-stark.png",
-        familyImgAddress: "image/families/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.jpg",
         liked: false,
     },
     {
@@ -60,7 +60,7 @@ const characters = [{
         name: "sansa stark",
         family: "stark",
         imgAddress: "image/characters/sansa-stark.png",
-        familyImgAddress: "image/families/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.jpg",
         liked: false,
     }
 ]
@@ -77,7 +77,7 @@ const characters = [{
 //     {id: 8, name:, imgAddress:,},
 // ]
 
-// const families = [
+// const houses = [
 //     {id: 1, name:, imgAddress:,},
 //     {id: 2, name:, imgAddress:,},
 //     {id: 3, name:, imgAddress:,},
