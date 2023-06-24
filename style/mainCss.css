@@ -37,7 +37,7 @@
     box-sizing: border-box;
 }
 
-a{
+a {
     all: unset;
     cursor: pointer;
 }
@@ -66,7 +66,7 @@ a{
     padding: 0 20px;
 }
 
-#menu>h1{
+#menu>h1 {
     font-family: minion;
 }
 
@@ -99,9 +99,10 @@ a{
 }
 
 @media(max-width:768px) {
-    #menu{
+    #menu {
         width: 100%;
     }
+
     #menu>nav>ul {
         position: fixed;
         right: -100%;
@@ -122,4 +123,60 @@ a{
 
 .active {
     right: 0 !important;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--dark1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff !important;
+    font-family: yekan;
+}
+
+#lists {
+    direction: rtl;
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lists>ul>li {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#lists>ul>li:first-child {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem !important;
+}
+
+#lists>ul:last-child>li:last-child {
+    font-family: roboto;
+}
+
+#lists>ul:last-child>li:nth-last-child(2) {
+    font-family: roboto;
+}
+
+#lists>ul>li>a>i {
+    padding-left: 15px;
+}
+
+footer>p {
+    text-align: center;
+    font-family: roboto;
+}
+
+@media(max-width: 400px) {
+    #lists {
+        flex-direction: column-reverse;
+    }
+
+    #lists>ul {
+        margin: 10px 0;
+    }
 }

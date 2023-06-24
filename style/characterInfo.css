@@ -1,5 +1,4 @@
-@import "nav-style.css";
-@import "footer.css";
+@import "mainCss.css";
 
 body{
     background: var(--dark2);

@@ -1,11 +1,8 @@
 import {
-    characters
-} from "./data-base-justForTest.js";
-
-import {
     $,
     getClass,
-    getId
+    getId,
+    characters
 } from "./mainScript.js";
 
 const searchInput = getId('search-input');
