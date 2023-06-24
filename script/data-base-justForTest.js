@@ -3,7 +3,7 @@ const characters = [{
         name: "john snow",
         family: "stark",
         imgAddress: "image/characters/john-snow.png",
-        familyImgAddress: "image/houses/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.png",
         liked: false,
     },
     {
@@ -36,7 +36,7 @@ const characters = [{
         name: "arya stark",
         family: "stark",
         imgAddress: "image/characters/arya-stark.png",
-        familyImgAddress: "image/houses/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.png",
         liked: false,
     },
     {
@@ -52,7 +52,7 @@ const characters = [{
         name: "robb stark",
         family: "stark",
         imgAddress: "image/characters/robb-stark.png",
-        familyImgAddress: "image/houses/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.png",
         liked: false,
     },
     {
@@ -60,7 +60,7 @@ const characters = [{
         name: "sansa stark",
         family: "stark",
         imgAddress: "image/characters/sansa-stark.png",
-        familyImgAddress: "image/houses/House_Stark.jpg",
+        familyImgAddress: "image/houses/House_Stark.png",
         liked: false,
     }
 ]

@@ -13,3 +13,4 @@ characterFatherName.textContent = characterInfo.fatherNmae;
 characterFamily.textContent = characterInfo.family;
 description.textContent += ` ( ${characterInfo.name} ${characterInfo.family} ) `;
 houseFlag.src = characterInfo.familyImgAddress;
+document.getElementsByTagName('title')[0].innerHTML = characterInfo.name
