@@ -1,7 +1,8 @@
 @import "mainCss.css";
 
 header {
-    min-height: 100vh;
+    height: 100lvh !important;
+    overflow: hidden;
     width: 100%;
     background-color: var(--dark2);
     display: flex;
@@ -30,7 +31,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: calc(55px + 40px) 0 40px 0;
+    margin: calc(55px + 20px) 0 40px 0;
 }
 
 #center-of-head>img {
