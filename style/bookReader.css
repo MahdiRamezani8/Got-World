@@ -1,0 +1,106 @@
+header {
+    width: 100%;
+    height: 55px;
+    background-color: var(--dark1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header>nav {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>nav>#page-editing-controls {
+    width: 80%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>nav>i {
+    cursor: pointer;
+}
+
+.book-chapters-menu {
+    width: 40%;
+    height: 100lvh;
+    padding: 10px 0;
+    background-color: var(--dark1);
+    position: fixed;
+    top: 55px;
+    transition: .3s;
+    right: -100%;
+    direction: rtl;
+    overflow-y: scroll !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header>nav>ul>li {
+    width: 100%;
+    font-family: roboto;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.chapter-title {
+    height: 40px;
+    background-color: var(--dark2);
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+.chapter-section {
+    height: 30px;
+    background-color: var(--dark3);
+    border-bottom: 1px solid var(--dark1);
+}
+
+.chapter-section:hover {
+    background-color: var(--dark4);
+}
+
+.active {
+    right: 0 !important;
+}
+
+main {
+    width: 100%;
+    background-color: var(--dark3);
+    display: flex;
+}
+
+.moving-between-pages {
+    position: fixed;
+    top: 55px;
+    width: 20% !important;
+    background-color: var(--dark2);
+    height: 100vh;
+}
+
+.moving-between-pages>i{
+    color: #fff !important;
+    font-size: 50px !important;
+}
+#book {
+    width: 60%;
+}
+
+#privous-page {
+    left: 0;
+}
+
+#next-page {
+    right: 0;
+}
