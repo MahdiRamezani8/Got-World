@@ -14,6 +14,18 @@
     font-family: roboto;
     src: url(../fonts/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: iranSans;
+    src: url(../fonts/iran\ sans.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/Vazir-Medium.ttf);
+}
+@font-face {
+    font-family: estedad;
+    src: url(../fonts/Estedad-Bold.ttf);
+}
 
 :root {
     --color-text: #a8abe1c2;

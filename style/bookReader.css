@@ -1,7 +1,9 @@
+@import url(mainCss.css);
+
 header {
     width: 100%;
     height: 55px;
-    background-color: var(--dark1);
+    background-color: var(--dark2);
     position: fixed;
     top: 0;
     left: 0;
@@ -31,6 +33,7 @@ header>nav>i {
 }
 
 .book-chapters-menu {
+    z-index: 99999 !important;
     width: 40%;
     height: 100lvh;
     padding: 10px 0;
@@ -77,16 +80,27 @@ header>nav>ul>li {
 
 main {
     width: 100%;
-    background-color: var(--dark3);
+    background-color: var(--dark1);
+    color: #fff;
     display: flex;
+    margin-top: 55px;
+    padding: 20px 0;
 }
 
 .moving-between-pages {
     position: fixed;
     top: 55px;
-    width: 20% !important;
-    background-color: var(--dark2);
+    width: 10%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.moving-between-pages:hover{
+    background-color: var(--dark2) !important;
 }
 
 .moving-between-pages>i{
@@ -94,13 +108,21 @@ main {
     font-size: 50px !important;
 }
 #book {
-    width: 60%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 #privous-page {
+    background: linear-gradient(90deg, var(--dark2), #00000000);
     left: 0;
 }
 
 #next-page {
+    background: linear-gradient(-90deg, var(--dark2), #00000000);
     right: 0;
+}
+
+.footer-in-book{
+    background-color: var(--dark2);
 }

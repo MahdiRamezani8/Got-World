@@ -1,6 +1,7 @@
 const $ = document;
 const getId = id => $.getElementById(id)
 const getClass = classE => $.querySelectorAll(classE)
+const getTag = TagE => $.querySelector(TagE)
 
 const openMenuButton = document.querySelector('#open-menu');
 const burgerMenu = document.querySelector('#menu-ul');
@@ -110,5 +111,6 @@ export {
     $,
     getId,
     getClass,
-    characters
+    characters,
+    getTag
 }
