@@ -1,0 +1,18 @@
+@import "mainCss.css";
+
+#container {
+    margin-top: 100px;
+}
+
+#container h1{
+    text-align: center;
+    font-size: 48pt !important;
+    margin-bottom: 50px;
+
+}
+
+#books{
+    display: flex;
+    flex-wrap: wrap;
+
+}
