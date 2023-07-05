@@ -93,14 +93,12 @@ a {
 
 #menu>nav>ul {
     display: flex;
-    gap: 20px;
 }
 
 
 #menu>nav>ul>li {
     height: 30px;
     width: 120px;
-    border-radius: 5px;
     text-align: center;
     transition-duration: .3s;
     cursor: pointer;
