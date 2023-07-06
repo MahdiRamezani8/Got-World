@@ -165,7 +165,7 @@ main{
 .introduction>img{
     height: 300px;
     object-fit: contain;
-    filter: brightness(40%);
+    filter: brightness(60%);
     border-radius: 5px;
     box-shadow: 3px 3px 40px var(--dark1);
 }
