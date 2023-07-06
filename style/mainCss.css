@@ -141,56 +141,90 @@ a {
 
 footer {
     width: 100%;
-    background-color: var(--dark1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff !important;
-    font-family: yekan;
-}
-
-#lists {
+    background-color: var(--dark3);
     direction: rtl;
-    width: 80%;
-    padding: 20px 0;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 20px 0;
 }
 
-#lists>ul>li {
+.footer-list-container {
+    width: 30%;
+    padding: 0 20px;
+}
+
+.footer-list>h2 {
+    letter-spacing: 2.5px;
+}
+
+.footer-list>h2::after {
+    content: '';
+    width: 10%;
+    height: 3px;
+    background-color: var(--blue2);
+    display: block;
+    margin: 7px 0;
+}
+
+.footer-list>li {
+    padding: 7px 0;
+    padding-right: 15px;
+    transition: .2s;
+}
+
+.footer-list>li>a>i {
+    padding-left: 15px !important;
+}
+
+.footer-list>li:hover {
+    transform: translateY(-3px);
+}
+
+#about {
+    width: 30%;
+    margin-top: 5px;
+}
+
+#about>p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+#socials {
+    margin-top: 20px;
+}
+
+.social {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--dark4);
+    margin: 5px;
+    transition: .3s;
     cursor: pointer;
-    margin-right: 15px;
 }
 
-#lists>ul>li:first-child {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.2rem !important;
+.social>a>i {
+    transform: translateY(5px);
+    font-size: 1.8em !important;
 }
 
-#lists>ul:last-child>li:last-child {
-    font-family: roboto;
+.social:hover{
+    background-color: var(--dark2);
 }
 
-#lists>ul:last-child>li:nth-last-child(2) {
-    font-family: roboto;
-}
-
-#lists>ul>li>a>i {
-    padding-left: 15px;
-}
-
-footer>p {
-    text-align: center;
-    font-family: roboto;
-}
-
-@media(max-width: 400px) {
-    #lists {
-        flex-direction: column-reverse;
+@media(max-width:768px){
+    footer{
+        flex-direction: column;
+        align-items: center;
     }
-
-    #lists>ul {
-        margin: 10px 0;
+    .footer-list-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #about{
+        width: 80%;
     }
 }
