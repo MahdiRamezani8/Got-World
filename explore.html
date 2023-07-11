@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Got World - explore</title>
+    <link rel="stylesheet" href="style/explore.css"> 
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="menu-container">
+            <div id="menu">
+                <h1>GOT World</h1>
+                <nav>
+                    <ul id="menu-ul">
+                        <li><a href="library.html">کتابخانه</a></li>
+                        <li><a href="about.html">درباره</a></li>
+                        <li><a href="map.html">مکان‌ها</a></li>
+                        <li><a href="explore.html">خاندان‌ها</a></li>
+                        <li><a href="explore.html">کاراکتر ها</a></li>
+                    </ul>
+                    <i class="fa fa-navicon" id="open-menu"></i>
+                </nav>
+            </div>
+        </div>
+        <div id="title">
+            <h1> دنبال چی میگردی؟ </h1>
+            <h2> همین جا سرچ کن <i class="fa fa-arrow-down"></i></h2>
+        </div>
+        <div id="search-container">
+            <div id="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" id="search" placeholder="کاراکتر، مکان، خاندان و غیره">
+            </div>
+            <ul id="search-suggestion">
+                <li class="suggest-item">john snow</li>
+                <li class="suggest-item">hodor</li>
+                <li class="suggest-item">ned stark</li>
+                <li class="suggest-item">emilia clarck</li>
+            </ul>
+        </div>
+        <div id="scroll-to-main">
+            <div class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""
+                id="scroll-arrow"></div>
+        </div>
+    </header>
+    <main>
+        <h1 class="slider-title" id="char-tit">کاراکترها ...</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="char-swiper-wrapper">
+            </div>
+        </div>
+
+        <h1 class="slider-title">خاندان‌ها ...</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="family-swiper-wrapper">
+            </div>
+        </div>
+
+        <h1 class="slider-title">مکان‌ها ...</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="place-swiper-wrapper">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="pages" class="footer-list-container">
+            <ul class="footer-list">
+                <h2>صفحه ها</h2>
+                <li><a href="explore.html"><i class="fa fa-link"></i>کاراکترها </a></li>
+                <li><a href="explore.html"><i class="fa fa-link"></i>خاندان‌ها </a></li>
+                <li><a href="map.html"><i class="fa fa-link"></i>مکان‌ها</a></li>
+            </ul>
+        </div>
+
+        <div id="contact" class="footer-list-container">
+            <ul class="footer-list">
+                <h2>تماس با ما</h2>
+                <li><a href="ramezani86mraz@gmail.com"><i class="fa fa-drivers-license-o"></i>Email</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>09921234567</a></li>
+            </ul>
+        </div>
+
+        <div id="about">
+            <p>
+                این وبسایت یک پروژه متن باز است که توسط <a href="https://mohammadrostamidev.ir"> محمد رستمی</a> و مهدی رمضانی توسعه یافته. شما میتوانید با مراجه به صفحه گیت هاب منبع پروژه را ببینید.
+            </p>
+
+            <div id="socials">
+                <span class="social">
+                    <a href="https://youtube.com/@CreativityHousee" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </span>
+                <span class="social">
+                    <a href="https://github.com/creativityHousee" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </span>
+                <span class="social">
+                    <a href="https://t.me/CleverDevs" target="_blank">
+                        <i class="fa fa-telegram"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script/exlore.js"></script>
+    <script src="script/swiper-bundle.min.js"></script>
+</body>
+
+</html>
