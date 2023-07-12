@@ -2,7 +2,6 @@
 
 #title {
     width: 100%;
-    height: 100lvh;
     background-color: var(--dark2);
     color: #fff;
     direction: rtl;
@@ -14,18 +13,22 @@
 #title>h1 {
     font-size: 1.9em !important;
 }
+
 #title>h2 {
     font-size: 1.2em !important;
 }
+
 #title>h3 {
     font-size: 1.1em !important;
 }
-#scroll-to-main{
+
+#scroll-to-main {
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
- #library {
+
+#library {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
@@ -35,7 +38,12 @@
     align-items: center;
 }
 
-.row{
+.row-title {
+    margin: 15px 15px 15px auto;
+    font-size: 1.4em !important;
+}
+
+.row {
     width: 90%;
     height: 450px;
     border-bottom: 2px solid var(--dark1);
@@ -46,6 +54,7 @@
     box-shadow: 3px 3px 30px #626262;
     padding: 20px;
 }
+
 .row>section {
     position: relative;
     min-width: 150px;
@@ -58,11 +67,11 @@
     box-shadow: 3px 3px 30px #aaa;
 }
 
-.row>section:hover{
+.row>section:hover {
     transform: translateY(-5px);
 }
 
-.row>section>h1{
+.row>section>h1 {
     position: absolute;
     top: 50%;
     left: 50%;
