@@ -101,7 +101,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 300px;
 }
 
 .swiper-wrapper {
@@ -112,7 +112,7 @@ main {
 .swiper-slide {
     background: var(--dark6);
     border-radius: 5px;
-    padding: 10px 20px 20px 20px;
+    padding-bottom: 20px;
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
@@ -120,21 +120,24 @@ main {
 }
 
 #char-profile {
-    width: 80%;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    object-fit: contain;
+    filter: brightness(60%);
+    transition: .4s;
+    cursor: pointer;
+}
+
+#char-profile:hover {
+    filter: brightness(100%);
 }
 
 #char-name {
-    font-size: 1.4rem !important;
-    font-weight: bolder;
-}
-
-.swiper-slide #see-more-about-char,
-#char-name {
-    font-family: roboto !important;
+    font-size: 1.6rem !important;
 }
 
 #actions {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,43 +145,25 @@ main {
 
 #actions>i {
     color: red;
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
     cursor: pointer;
+    position: relative;
 }
 
 #see-more-about-char {
+    height: 25px;
     width: 60%;
-    background-color: transparent;
     cursor: pointer;
-    border-radius: 20px;
-    border: 3px solid var(--blue);
+    border-radius: 5px;
+    border: 2px solid var(--blue);
     color: var(--blue);
+    text-align: center;
+    line-height: 30px;
     transition: .2s;
     padding: 3px;
-    text-align: center;
 }
 
 #see-more-about-char:hover {
     background-color: var(--blue);
     color: #fff;
-}
-
-@media(max-width: 640px) {
-    .swiper {
-        height: 350px;
-    }
-
-    #char-profile {
-        width: 40%;
-    }
-
-    #actions {
-        width: 50%;
-    }
-}
-
-@media(max-width: 600px) {
-    #char-profile {
-        width: 60%;
-    }
 }
