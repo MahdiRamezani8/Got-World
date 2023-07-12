@@ -20,7 +20,7 @@ characters.forEach(character => {
       <h1 id="char-name">${character.name}</h1>
       <div id="actions">
         <i class="fa fa-heart-o like" data-name="${character.name}"></i>
-        <a id="see-more-about-char" target="_blank" href="characterInfo.html?info=${encodeURIComponent(JSON.stringify(character))}">see more</a>
+        <a id="see-more-about-char" target="_blank" href="info.html?info=${encodeURIComponent(JSON.stringify(character))}">see more</a>
       </div>
     </div>
   `);
