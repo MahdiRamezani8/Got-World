@@ -1,16 +1,26 @@
-import { $, getClass, getId, getTag } from "./mainScript.js";
+import {
+    $,
+    getClass,
+    getId,
+    getTag
+} from "./mainScript.js";
 
 const characterInfo = JSON.parse(new URLSearchParams(location.search).get('info'));
 
-const characterName = getClass('name');
-const characterFatherName = getId('father-name');
-const characterFamily = getId('family');
-const description = getId('description');
-const houseFlag = getId('houseFlag');
+const infoTitle = getId('info-title')
+const infoDesc = getId('info')
+const characterProfile = getId('profile')
+characterProfile.style.backgroundImage = `url('${characterInfo.imgAddress}')`
+let infoTitleElement = ''
+let infoElement = ''
+for (const key in characterInfo) {
+    infoTitleElement += `<li> ${key}</li>`;
+    infoElement += `<li> ${characterInfo[key]} </li>`;
+}
+infoDesc.insertAdjacentHTML('beforeend', infoElement)
+infoTitle.insertAdjacentHTML('beforeend', infoTitleElement)
 
-characterName.textContent = characterInfo.name;
-characterFatherName.textContent = characterInfo.fatherNmae;
-characterFamily.textContent = characterInfo.family;
-description.textContent += ` ( ${characterInfo.name} ${characterInfo.family} ) `;
-houseFlag.src = characterInfo.familyImgAddress;
-document.getElementsByTagName('title')[0].innerHTML = characterInfo.name
+const characterName = getClass('.name')
+characterName.forEach(element => element.innerHTML = characterInfo.name)
+const characterhouse = getClass('.house')
+characterhouse.forEach(element => element.innerHTML = characterInfo.family)
