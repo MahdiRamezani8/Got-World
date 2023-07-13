@@ -67,6 +67,35 @@ main {
     color: var(--blue);
 }
 
+#char-info{
+    width: 100%;
+    direction: rtl;
+    padding: 0 20px;
+    display: flex;
+}
+
+#info-title{
+    background-color: var(--blue2);
+    color: #fff;
+}
+#info-title>li{
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--blue);
+}
+
+#info{
+    width: 100%;
+}
+
+#info>li{
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--blue);
+}
+
+#info>li:nth-child(odd){
+    background-color: var(--dark6);
+}
+
 /* #banner{
     display: block;
     width: 80%;
