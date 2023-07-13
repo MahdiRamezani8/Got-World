@@ -19,4 +19,4 @@ function pageScroll(scrollValue) {
     }, 1);
 }
 
-getId('scroll-arrow').addEventListener('click', () => pageScroll(window.innerHeight))
+getId('scroll-arrow').addEventListener('click', () => pageScroll(window.innerHeight / 1.05))
