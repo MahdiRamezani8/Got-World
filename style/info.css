@@ -15,6 +15,17 @@ main {
     justify-content: center;
 }
 
+#profile{
+    width: 100%;
+    background-image: url(../image/main\ page/third-intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+    filter: brightness(80%);
+    transition: .2s;
+    cursor: pointer;
+}
+
 #char-profile>img {
     width: 100%;
     object-fit: cover;
@@ -107,54 +118,3 @@ main {
     font-size: 1.4em !important;
     padding-bottom: 5px;
 }
-
-/* #banner{
-    display: block;
-    width: 80%;
-    margin: calc(55px + 40px) auto 0 auto;
-    padding: 100px 0; 
-    box-sizing: border-box;
-}
-
-#content{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 100px auto;
-    direction: rtl;
-}
-#content #mainInfo{
-    flex: 2;
-    margin-right: 20px;
-    padding: 10px;
-}
-#content #mainInfo span {
-    display: inline-block;
-    padding: 5px;
-
-}
-#mainInfo .row {
-    border-bottom: 1px solid #eee;
-    padding: 5px;
-}
-#content #description{
-    flex: 5;
-}
-
-
-#content #houseFlag{
-    width: 95%;
-    margin: 5px auto;
-
-}
-
-@media(max-width: 767px) {
-    #content{
-        font-size: 2px !important;
-        flex-direction: column;
-        align-items: center;
-    }
-    #mainInfo{
-        margin-bottom: 50px;
-    }
-} */
