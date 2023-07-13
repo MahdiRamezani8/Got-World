@@ -21,20 +21,12 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 25%;
-    filter: brightness(80%);
+    filter: brightness(20%);
     transition: .2s;
     cursor: pointer;
 }
 
-#char-profile>img {
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(80%);
-    transition: .2s;
-    cursor: pointer;
-}
-
-#char-profile>img:hover {
+#profile:hover {
     filter: brightness(100%);
 }
 

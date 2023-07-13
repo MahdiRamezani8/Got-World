@@ -27,7 +27,7 @@ const characters = [{
     },
     {
         id: 2,
-        name: "tyrion lanister",
+        name: "tyrion",
         family: "lanister",
         imgAddress: "image/characters/tyrion-lannister.jpg",
         familyImgAddress: "image/houses/House_Lannister.webp",
@@ -44,7 +44,7 @@ const characters = [{
     },
     {
         id: 4,
-        name: "jaime lanister",
+        name: "jaime",
         family: "lanister",
         imgAddress: "image/characters/jaime-lanister.jpg",
         familyImgAddress: "image/houses/House_Lannister.webp",
@@ -52,7 +52,7 @@ const characters = [{
     },
     {
         id: 5,
-        name: "arya stark",
+        name: "arya",
         family: "stark",
         imgAddress: "image/characters/arya-srark.jpg",
         familyImgAddress: "image/houses/House_Stark.png",
@@ -60,7 +60,7 @@ const characters = [{
     },
     {
         id: 6,
-        name: "cersie lanister",
+        name: "cersie",
         family: "lanister",
         imgAddress: "image/characters/cersei-lanister.jpg",
         familyImgAddress: "image/houses/House_Lannister.webp",
@@ -68,7 +68,7 @@ const characters = [{
     },
     {
         id: 7,
-        name: "robb stark",
+        name: "robb",
         family: "stark",
         imgAddress: "image/characters/robb-stark.jpg",
         familyImgAddress: "image/houses/House_Stark.png",
@@ -76,7 +76,7 @@ const characters = [{
     },
     {
         id: 8,
-        name: "sansa stark",
+        name: "sansa",
         family: "stark",
         imgAddress: "image/characters/sansa-stark.jpg",
         familyImgAddress: "image/houses/House_Stark.png",
