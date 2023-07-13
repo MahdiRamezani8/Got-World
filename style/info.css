@@ -96,6 +96,18 @@ main {
     background-color: var(--dark6);
 }
 
+#char-description{
+    direction: rtl;
+    width: 90%;
+    margin: 50px auto;
+    line-height: 35px;
+}
+
+#char-description>h1{
+    font-size: 1.4em !important;
+    padding-bottom: 5px;
+}
+
 /* #banner{
     display: block;
     width: 80%;
