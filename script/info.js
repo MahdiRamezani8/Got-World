@@ -1,8 +1,8 @@
-import { $, getClass, getId } from "./mainScript.js";
+import { $, getClass, getId, getTag } from "./mainScript.js";
 
 const characterInfo = JSON.parse(new URLSearchParams(location.search).get('info'));
 
-const characterName = getId('name');
+const characterName = getClass('name');
 const characterFatherName = getId('father-name');
 const characterFamily = getId('family');
 const description = getId('description');
