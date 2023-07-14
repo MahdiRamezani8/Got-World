@@ -33,7 +33,7 @@ main {
 #controls {
     width: 100%;
     padding: 10px 25px;
-    color: #fff !important;
+    color: #fff;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -43,7 +43,7 @@ main {
 
 #actions>i {
     padding: 0 10px;
-    font-size: 1.3em !important;
+    font-size: 1.3em;
     cursor: pointer;
 }
 
@@ -51,13 +51,13 @@ main {
     direction: rtl;
     width: 100%;
     text-align: center;
-    font-size: 1.6em !important;
+    font-size: 1.6em;
     font-weight: bolder;
     margin: 25px 0;
 }
 
 #char-name>span {
-    font-size: 1.6em !important;
+    font-size: 1.6em;
     padding: 0 20px;
     text-transform: capitalize;
 }
@@ -107,6 +107,6 @@ main {
 }
 
 #char-description>h1{
-    font-size: 1.4em !important;
+    font-size: 1.4em;
     padding-bottom: 5px;
 }

@@ -1,7 +1,7 @@
 @import "mainCss.css";
 
 header {
-    height: 100lvh !important;
+    height: 100lvh;
     width: 100%;
     background-color: var(--dark2);
     display: flex;
@@ -16,14 +16,14 @@ header {
 }
 
 #title>p:first-child {
-    font-family: minion !important;
-    font-size: 4em !important;
+    font-family: minion;
+    font-size: 4em;
 }
 
 #title>p:last-child {
     margin-top: 10px;
-    font-family: minion !important;
-    font-size: 2em !important;
+    font-family: minion;
+    font-size: 2em;
 }
 
 #center-of-head {
@@ -52,11 +52,11 @@ header {
 
 @media(max-width: 480px) {
     #title>p:first-child {
-        font-size: calc(40px + 0.390625vw) !important;
+        font-size: calc(40px + 0.390625vw);
     }
 
     #title>p:last-child {
-        font-size: calc(30px + 0.390625vw) !important;
+        font-size: calc(30px + 0.390625vw);
     }
 
     #center-of-head>img {
@@ -154,7 +154,7 @@ main {
 }
 
 .introduction>.descriptions>h1 {
-    font-size: 1.5em !important;
+    font-size: 1.5em;
 }
 
 @media(max-width: 1200px) {

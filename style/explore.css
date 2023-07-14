@@ -17,11 +17,11 @@ header {
 }
 
 #title>h1 {
-    font-size: 2.5em !important;
+    font-size: 2.5em;
 }
 
 #title>h2 {
-    font-size: 2em !important;
+    font-size: 2em;
 }
 
 #scroll-to-main {
@@ -42,7 +42,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 350px;
+    height: 380px;
 }
 
 .swiper-wrapper {
@@ -74,7 +74,7 @@ main {
 }
 
 #char-name {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
 }
 
 #actions {
@@ -86,7 +86,7 @@ main {
 
 #actions>i {
     color: red;
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
     cursor: pointer;
     position: relative;
 }

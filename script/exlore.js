@@ -9,7 +9,7 @@ import {
 const searchSuggestionElem = getId('search-suggestion')
 console.log(searchSuggestionElem);
 const searchElem = getId('search')
-searchElem.addEventListener('click', event => searchSuggestionElem.classList.add('show-list'))
+searchElem.addEventListener('click', () => searchSuggestionElem.classList.toggle('show-list'))
 
 
 const charSwiperWrapper = getId('char-swiper-wrapper');
@@ -37,8 +37,6 @@ function handleLikeCharacter(event) {
     heartIcon.toggle('fa-heart-o');
     heartIcon.toggle('fa-heart');
 }
-
-
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
