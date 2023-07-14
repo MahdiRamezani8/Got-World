@@ -46,6 +46,9 @@ a {
     all: unset;
     cursor: pointer;
 }
+button,input{
+    font-size: calc(15px + 0.390625vw) !important;
+}
 
 #menu-container {
     position: fixed;
@@ -201,7 +204,7 @@ footer {
 
 .social>a>i {
     transform: translateY(3px);
-    font-size: 1.8em !important;
+    font-size: 1.8em;
 }
 
 .social:hover {
@@ -320,25 +323,17 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     position: absolute;
     top: 8px;
     left: 10px;
-    font-size: 1.4em !important;
-}
-
-@keyframes height {
-    from {
-        height: 0;
-    }
-
-    to {
-        height: auto !important;
-    }
+    font-size: 1.4em;
 }
 
 #search-suggestion {
     width: 80%;
     background-color: #fff;
+    box-shadow: 0 0 20px var(--dark1);
     border-radius: 10px;
     padding: 10px;
     margin-top: 5px;
+    z-index: 99;
     position: absolute;
     transform: scaleY(0);
 }
