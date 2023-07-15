@@ -42,7 +42,6 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 380px;
 }
 
 .swiper-wrapper {
@@ -58,6 +57,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 #char-profile {
