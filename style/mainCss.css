@@ -54,6 +54,8 @@ button,input{
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
     color: #fff;
     background-color: var(--dark1);
@@ -67,19 +69,11 @@ button,input{
     justify-content: space-between;
     width: 80%;
     min-height: 55px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
     padding: 0 20px;
 }
 
 #menu>h1 {
-    font-family: minio;
-}
-
-#menu>nav {
-    display: inline-flex;
+    font-family: minion;
 }
 
 #menu>nav>i {
@@ -87,21 +81,34 @@ button,input{
     cursor: pointer;
 }
 
-#menu>nav>ul {
+#menu-ul {
     display: flex;
+    flex-direction: row-reverse;
 }
 
-
-#menu>nav>ul>li {
+#menu-ul>li {
+    position: relative;
     height: 30px;
-    width: 120px;
+    width: 5em;
     text-align: center;
     transition-duration: .3s;
     cursor: pointer;
 }
 
-#menu>nav>ul>li:hover {
-    color: var(--color-text);
+#menu-ul>li::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: .8em;
+    width: 0;
+    height: 2px;
+    background-color: var(--blue2);
+    transition: .3s;
+}
+
+#menu-ul>li:hover::after{
+    width: 75%;
 }
 
 @media(max-width:768px) {
