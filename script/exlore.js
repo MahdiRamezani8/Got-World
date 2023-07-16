@@ -3,28 +3,35 @@ import {
     getClass,
     getId,
     getTag,
-    characters
+    characters,
+    houses
 } from "./mainScript.js";
 
 const searchSuggestionElem = getId('search-suggestion')
-console.log(searchSuggestionElem);
 const searchElem = getId('search')
 searchElem.addEventListener('click', () => searchSuggestionElem.classList.toggle('show-list'))
 
 
 const charSwiperWrapper = getId('char-swiper-wrapper');
-characters.forEach(character => {
-    charSwiperWrapper.insertAdjacentHTML('beforeEnd', `
+const houseSwiperWrapper = getId('house-swiper-wrapper');
+
+characters.forEach(character => createSlide(character, charSwiperWrapper));
+houses.forEach(house => createSlide(house, houseSwiperWrapper))
+
+function createSlide(data, element) {
+    console.log(data);
+    const slideMarkup = `
     <div class="swiper-slide">
-      <img src="${character.imgAddress}" alt="" id="char-profile">
-      <h1 id="char-name">${character.name}</h1>
+      <img src="${data.imgAddress}" alt="" id="char-profile">
+      <h1 id="char-name">${data.name}</h1>
       <div id="actions">
-        <i class="fa fa-heart-o like" data-name="${character.name}"></i>
-        <a id="see-more-about-char" target="_blank" href="info.html?info=${encodeURIComponent(JSON.stringify(character))}">see more</a>
+        <i class="fa fa-heart-o like" data-name="${data.name}"></i>
+        <a id="see-more-about-char" target="_blank" href="info.html?info=${encodeURIComponent(JSON.stringify(data))}">see more</a>
       </div>
     </div>
-  `);
-});
+  `;
+    element.insertAdjacentHTML('beforeend', slideMarkup)
+}
 
 const likeButtons = Array.from(getClass('.fa-heart-o'));
 likeButtons.forEach(button => button.addEventListener('click', handleLikeCharacter));

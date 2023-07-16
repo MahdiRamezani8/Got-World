@@ -92,33 +92,55 @@ const characters = [{
     }
 ]
 
-
-// const places = [
-//     {id: 1, name:, imgAddress:,},
-//     {id: 2, name:, imgAddress:,},
-//     {id: 3, name:, imgAddress:,},
-//     {id: 4, name:, imgAddress:,},
-//     {id: 5, name:, imgAddress:,},
-//     {id: 6, name:, imgAddress:,},
-//     {id: 7, name:, imgAddress:,},
-//     {id: 8, name:, imgAddress:,},
-// ]
-
-// const houses = [
-//     {id: 1, name:, imgAddress:,},
-//     {id: 2, name:, imgAddress:,},
-//     {id: 3, name:, imgAddress:,},
-//     {id: 4, name:, imgAddress:,},
-//     {id: 5, name:, imgAddress:,},
-//     {id: 6, name:, imgAddress:,},
-//     {id: 7, name:, imgAddress:,},
-//     {id: 8, name:, imgAddress:,},
-// ]
+const houses = [{
+        id: 1,
+        name: 'stark',
+        imgAddress: 'image/houses/house-stark-1920.jpg',
+        liked: false
+    },
+    {
+        id: 2,
+        name: 'lannister',
+        imgAddress: 'image/houses/house-lannister-1920.jpg',
+        liked: false
+    },
+    {
+        id: 3,
+        name: 'tully',
+        imgAddress: 'image/houses/house-tully-1920.jpg',
+        liked: false
+    },
+    {
+        id: 4,
+        name: 'targaryen',
+        imgAddress: 'image/houses/house-targaryen-1920.jpg',
+        liked: false
+    },
+    {
+        id: 5,
+        name: 'arryn',
+        imgAddress: 'image/houses/house-arryn-1920.jpg',
+        liked: false
+    },
+    {
+        id: 6,
+        name: 'martell',
+        imgAddress: 'image/houses/house-martell-1920.jpg',
+        liked: false
+    },
+    {
+        id: 7,
+        name: 'baratheon',
+        imgAddress: 'image/houses/house-baratheon-1920.jpg',
+        liked: false
+    },
+]
 
 export {
     $,
     getId,
     getClass,
     characters,
-    getTag
+    getTag,
+    houses
 }
