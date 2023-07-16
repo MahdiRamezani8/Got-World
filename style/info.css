@@ -13,6 +13,7 @@ main {
     position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 #profile{
@@ -52,7 +53,6 @@ main {
     text-align: center;
     font-size: 1.6em;
     font-weight: bolder;
-    margin: 25px 0;
 }
 
 #char-name>span {
@@ -74,6 +74,7 @@ main {
     direction: rtl;
     padding: 0 20px;
     display: flex;
+    margin-top: 25px;
 }
 
 #info-title{

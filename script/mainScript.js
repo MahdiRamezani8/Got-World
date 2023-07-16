@@ -18,6 +18,7 @@ menuItems.forEach(element => element.addEventListener('click', () => setTimeout(
 }, 200)));
 
 const characters = [{
+        type: 'character',
         id: 1,
         name: "john snow",
         family: "stark",
@@ -27,6 +28,7 @@ const characters = [{
         liked: false,
     },
     {
+        type: 'character',
         id: 2,
         name: "tyrion",
         family: "lanister",
@@ -36,6 +38,7 @@ const characters = [{
         liked: false,
     },
     {
+        type: 'character',
         id: 3,
         name: "daenerys",
         family: "targaryen",
@@ -46,6 +49,7 @@ const characters = [{
 
     },
     {
+        type: 'character',
         id: 4,
         name: "jaime",
         family: "lanister",
@@ -55,15 +59,17 @@ const characters = [{
         liked: false,
     },
     {
+        type: 'character',
         id: 5,
         name: "arya",
-        family: "stark",
+        family: "stahouserk",
         fatherNmae: "ned",
         imgAddress: "image/characters/arya-srark.jpg",
         familyImgAddress: "image/houses/House_Stark.png",
         liked: false,
     },
     {
+        type: 'character',
         id: 6,
         name: "cersie",
         family: "lanister",
@@ -73,6 +79,7 @@ const characters = [{
         liked: false,
     },
     {
+        type: 'character',
         id: 7,
         name: "robb",
         family: "stark",
@@ -82,6 +89,7 @@ const characters = [{
         liked: false,
     },
     {
+        type: 'character',
         id: 8,
         name: "sansa",
         family: "stark",
@@ -93,42 +101,49 @@ const characters = [{
 ]
 
 const houses = [{
+        type: 'house',
         id: 1,
         name: 'stark',
         imgAddress: 'image/houses/house-stark-1920.jpg',
         liked: false
     },
     {
+        type: 'house',
         id: 2,
         name: 'lannister',
         imgAddress: 'image/houses/house-lannister-1920.jpg',
         liked: false
     },
     {
+        type: 'house',
         id: 3,
         name: 'tully',
         imgAddress: 'image/houses/house-tully-1920.jpg',
         liked: false
     },
     {
+        type: 'house',
         id: 4,
         name: 'targaryen',
         imgAddress: 'image/houses/house-targaryen-1920.jpg',
         liked: false
     },
     {
+        type: 'house',
         id: 5,
         name: 'arryn',
         imgAddress: 'image/houses/house-arryn-1920.jpg',
         liked: false
     },
     {
+        type: 'house',
         id: 6,
         name: 'martell',
         imgAddress: 'image/houses/house-martell-1920.jpg',
         liked: false
     },
     {
+        type: 'house',
         id: 7,
         name: 'baratheon',
         imgAddress: 'image/houses/house-baratheon-1920.jpg',
