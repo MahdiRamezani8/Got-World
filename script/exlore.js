@@ -8,18 +8,32 @@ import {
 } from "./mainScript.js";
 
 const searchSuggestionElem = getId('search-suggestion')
-const searchElem = getId('search')
-searchElem.addEventListener('click', () => searchSuggestionElem.classList.toggle('show-list'))
+const searchBoxInput = getId('search')
 
+searchBoxInput.addEventListener('keydown', (event) => {
+    searchSuggestionElem.classList.add('show-list')
+    searchSuggestionElem.innerHTML = ''
+    const inputValue = searchBoxInput.value;
+    let suggests = searchForSimularWord(inputValue)
+    suggests = suggests.map(suggest => `<li class="suggest-item">${suggest}</li>`).join('')
+    searchSuggestionElem.insertAdjacentHTML('beforeend', suggests)
+})
+
+function searchForSimularWord(text) {
+    const allSuggests = []
+    const characterSuggests = characters.filter(item => item.name.includes(text) == true)
+    const HouseSuggests = houses.filter(item => item.name.includes(text) == true)
+    characterSuggests.forEach(item => allSuggests.push(item.name))
+    HouseSuggests.forEach(item => allSuggests.push(item.name))
+    return allSuggests
+}
 
 const charSwiperWrapper = getId('char-swiper-wrapper');
 const houseSwiperWrapper = getId('house-swiper-wrapper');
-
 characters.forEach(character => createSlide(character, charSwiperWrapper));
 houses.forEach(house => createSlide(house, houseSwiperWrapper))
 
 function createSlide(data, element) {
-    console.log(data);
     const slideMarkup = `
     <div class="swiper-slide">
       <img src="${data.imgAddress}" alt="" id="char-profile">
