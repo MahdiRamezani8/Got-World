@@ -12,22 +12,6 @@
 <body>
     <header>
         <nav>
-            <div id="page-editing-controls">
-                <label for="font-size">font size:</label>
-                <input type="number" min="8" max="272" value="" id="font-size">
-                <label for="fonts">font type:</label>
-                <select id="fonts">
-                    <option value="yekan" class="font-family">yekan</option>
-                    <option value="vazir" class="font-family">vazir</option>
-                    <option value="iranSans" class="font-family">iran sans</option>
-                    <option value="estedad" class="font-family">estedad</option>
-                </select>
-                <label for="change-background">background color: </label>
-                <input type="color" class="change-color" id="change-background" value="#353535">
-                <label for="change-fontColor">font color: </label>
-                <input type="color" class="change-color" id="change-fontColor" value="#ffffff">
-            </div>
-
             <i class="fa fa-navicon" class="change-color" id="open-menu"></i>
 
             <ul id="menu-ul" class="book-chapters-menu">
@@ -90,6 +74,23 @@
         <div id="next-page" class="moving-between-pages"><i class="fa fa-angle-right"></i></div>
         </a>
     </main>
+    <div id="page-editing-controls-modal">
+        <div id="page-editing-controls">
+            <label for="font-size">font size:</label>
+            <input type="number" min="8" max="272" value="" id="font-size">
+            <label for="fonts">font type:</label>
+            <select id="fonts">
+                <option value="yekan" class="font-family">yekan</option>
+                <option value="vazir" class="font-family">vazir</option>
+                <option value="iranSans" class="font-family">iran sans</option>
+                <option value="estedad" class="font-family">estedad</option>
+            </select>
+            <label for="change-background">background color: </label>
+            <input type="color" class="change-color" id="change-background" value="#353535">
+            <label for="change-fontColor">font color: </label>
+            <input type="color" class="change-color" id="change-fontColor" value="#ffffff">
+        </div>
+    </div>
     <footer>
         <div id="pages" class="footer-list-container">
             <ul class="footer-list">
