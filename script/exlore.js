@@ -39,7 +39,7 @@ function createSlide(data, element) {
       <img src="${data.imgAddress}" alt="" id="char-profile">
       <h1 id="char-name">${data.name}</h1>
       <div id="actions">
-        <i class="fa fa-heart-o like" data-name="${data.name}"></i>
+        <i class="fa fa-heart-o like ${data.type}" data-name="${data.name}"></i>
         <a id="see-more-about-char" target="_blank" href="info.html?info=${encodeURIComponent(JSON.stringify(data))}">see more</a>
       </div>
     </div>
@@ -47,13 +47,15 @@ function createSlide(data, element) {
     element.insertAdjacentHTML('beforeend', slideMarkup)
 }
 
-const likeButtons = Array.from(getClass('.fa-heart-o'));
-likeButtons.forEach(button => button.addEventListener('click', handleLikeCharacter));
+const characterLikeButtons = Array.from(getClass('.character'));
+const houseLikeButtons = Array.from(getClass('.house'));
+characterLikeButtons.forEach(button => button.addEventListener('click', (event) => handleLikeCharacter(event, characters)));
+houseLikeButtons.forEach(button => button.addEventListener('click', (event) => handleLikeCharacter(event, houses)));
 
-function handleLikeCharacter(event) {
-    const selectedCharacterName = event.target.dataset.name;
-    const selectedCharacter = characters.find(character => character.name === selectedCharacterName);
-    selectedCharacter.liked = !selectedCharacter.liked;
+function handleLikeCharacter(event, data) {
+    const dataName = event.target.dataset.name;
+    const likeWanted = data.find(item => item.name === dataName);
+    likeWanted.liked = !likeWanted.liked;
     const heartIcon = event.target.classList;
     heartIcon.toggle('fa-heart-o');
     heartIcon.toggle('fa-heart');
