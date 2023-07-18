@@ -10,7 +10,7 @@ import {
 const searchSuggestionElem = getId('search-suggestion')
 const searchBoxInput = getId('search')
 
-searchBoxInput.addEventListener('keydown', (event) => {
+searchBoxInput.addEventListener('keydown', () => {
     searchSuggestionElem.classList.add('show-list')
     searchSuggestionElem.innerHTML = ''
     const inputValue = searchBoxInput.value;
@@ -71,10 +71,6 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
         768: {
             slidesPerView: 3,
             spaceBetween: 40,
@@ -93,7 +89,7 @@ function pageScroll(scrollValue) {
             clearInterval(scrollInterval);
         }
         window.scrollTo(0, i);
-        i += 3;
+        i += 5;
     }, 1);
 }
 
