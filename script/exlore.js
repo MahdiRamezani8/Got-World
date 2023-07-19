@@ -4,7 +4,8 @@ import {
     getId,
     getTag,
     characters,
-    houses
+    houses,
+    handleLikeCharacter
 } from "./mainScript.js";
 
 const searchSuggestionElem = getId('search-suggestion')
@@ -51,15 +52,6 @@ const characterLikeButtons = Array.from(getClass('.character'));
 const houseLikeButtons = Array.from(getClass('.house'));
 characterLikeButtons.forEach(button => button.addEventListener('click', (event) => handleLikeCharacter(event, characters)));
 houseLikeButtons.forEach(button => button.addEventListener('click', (event) => handleLikeCharacter(event, houses)));
-
-function handleLikeCharacter(event, data) {
-    const dataName = event.target.dataset.name;
-    const likeWanted = data.find(item => item.name === dataName);
-    likeWanted.liked = !likeWanted.liked;
-    const heartIcon = event.target.classList;
-    heartIcon.toggle('fa-heart-o');
-    heartIcon.toggle('fa-heart');
-}
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,

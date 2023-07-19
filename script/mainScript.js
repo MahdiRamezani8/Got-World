@@ -151,11 +151,21 @@ const houses = [{
     },
 ]
 
+function handleLikeCharacter(event, data) {
+    const dataName = event.target.dataset.name;
+    const likeWanted = data.find(item => item.name === dataName);
+    likeWanted.liked = !likeWanted.liked;
+    const heartIcon = event.target.classList;
+    heartIcon.toggle('fa-heart-o');
+    heartIcon.toggle('fa-heart');
+}
+
 export {
     $,
     getId,
     getClass,
     characters,
     getTag,
-    houses
+    houses,
+    handleLikeCharacter
 }

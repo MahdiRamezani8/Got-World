@@ -1,8 +1,10 @@
 import {
     $,
+    characters,
     getClass,
     getId,
     getTag,
+    handleLikeCharacter,
     houses
 } from "./mainScript.js";
 
@@ -14,6 +16,7 @@ const profile = getId('profile')
 const house = getClass('.house')
 const name = getClass('.name')
 const siteTitle = getTag('title')
+const likeButtonElem = getTag('.fa-heart-o')
 let infoTitleElement = ''
 let infoElement = ''
 
@@ -26,13 +29,15 @@ infoDesc.insertAdjacentHTML('beforeend', infoElement)
 infoTitle.insertAdjacentHTML('beforeend', infoTitleElement)
 
 profile.style.backgroundImage = `url('${info.imgAddress}')`
-
-
+likeButtonElem.dataset.name = `${info.name}`
 if (info.type == 'house') {
     const nameTitle = getId('char-name')
     nameTitle.style.display = 'none'
-} else{
+    likeButtonElem.addEventListener('click', (event) => handleLikeCharacter(event, houses))
+} else {
     name.forEach(element => element.innerHTML = info.name)
-house.forEach(element => element.innerHTML = info.family)
+    house.forEach(element => element.innerHTML = info.family)
+    likeButtonElem.addEventListener('click', (event) => handleLikeCharacter(event, characters))
+
 }
 siteTitle.innerHTML = `${info.name}  ${info.family}`
