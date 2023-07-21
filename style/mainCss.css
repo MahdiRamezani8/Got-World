@@ -46,7 +46,9 @@ a {
     all: unset;
     cursor: pointer;
 }
-button,input{
+
+button,
+input {
     font-size: calc(15px + 0.390625vw) !important;
 }
 
@@ -95,7 +97,7 @@ button,input{
     cursor: pointer;
 }
 
-#menu-ul>li::after{
+#menu-ul>li::after {
     content: '';
     display: block;
     position: absolute;
@@ -107,7 +109,7 @@ button,input{
     transition: .3s;
 }
 
-#menu-ul>li:hover::after{
+#menu-ul>li:hover::after {
     width: 75%;
 }
 

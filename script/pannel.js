@@ -1,0 +1,1 @@
+import { getId } from "./mainScript.js";
