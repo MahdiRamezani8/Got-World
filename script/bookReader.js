@@ -51,4 +51,7 @@ const lineHeight = parseInt(window.getComputedStyle(paragraph).getPropertyValue(
 const height = paragraph.getBoundingClientRect().height;
 const numberOfLines = Math.round(height / lineHeight);
 
-console.log("تعداد خطوط پاراگراف: " + numberOfLines);
+const openSettingModal = getId('open-setting')
+const settingModal = getId('page-editing-controls-modal')
+
+openSettingModal.addEventListener('click', () => settingModal.classList.add('show'))
