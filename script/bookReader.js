@@ -5,6 +5,23 @@ import {
     getTag
 } from "./mainScript.js";
 
+const books = {
+    AGameOfThoness: {
+        chapters: 5,
+        chapter1Pages: 6,
+        chapter2Pages: 3,
+        chapter3Pages: 7,
+        chapter4Pages: 4,
+        chapter5Pages: 9,
+    },
+    AClashOfKings: {
+        chapters: 3,
+        chapter1Pages: 9,
+        chapter2Pages: 3,
+        chapter3Pages: 12,
+    }
+}
+
 const bookTextesContainer = getTag('main')
 const bookText = getId('book')
 
@@ -28,3 +45,10 @@ const changeTextsFontSize = getId('font-size')
 
 // adding event to font size element
 changeTextsFontSize.addEventListener('change', e => bookText.style.cssText = 'font-size:' + e.target.value + 'px !important')
+
+const paragraph = document.getElementById("book");
+const lineHeight = parseInt(window.getComputedStyle(paragraph).getPropertyValue("line-height"));
+const height = paragraph.getBoundingClientRect().height;
+const numberOfLines = Math.round(height / lineHeight);
+
+console.log("تعداد خطوط پاراگراف: " + numberOfLines);

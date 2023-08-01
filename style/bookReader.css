@@ -17,13 +17,13 @@ header>nav {
     width: 95%;
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
-
 }
 
-header>nav>#page-editing-controls {
-    /*width: 80%;*/
+header>nav>i {
+    cursor: pointer;
+}
 
+/* header>nav>#page-editing-controls {
     padding: 20px;
     display: flex;
     align-items: center;
@@ -32,11 +32,8 @@ header>nav>#page-editing-controls {
     position: absolute;
     background: #000;
     z-index: 99;
-}
+} */
 
-header>nav>i {
-    cursor: pointer;
-}
 
 .book-chapters-menu {
     z-index: 99999 !important;
@@ -89,7 +86,7 @@ main {
     background-color: var(--dark1);
     color: #fff;
     display: flex;
-    /*margin-top: 55px;*/
+    margin-top: 55px;
     padding: 20px 0;
 }
 
@@ -113,10 +110,12 @@ main {
     color: #fff !important;
     font-size: 50px !important;
 }
+
 #book {
     width: 80%;
     margin: 0 auto;
     text-align: justify;
+    line-height: 30px;
 }
 
 #privous-page {
@@ -134,15 +133,15 @@ main {
 }
 
 #page-editing-controls-modal{
-    width: 500px;
-    height: 500px;
+    width: 80%;
     position: fixed;
-    top: 100px;
-    right: 50%;
-    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--dark3);
+    border-radius: 5px;
+    box-shadow: 0 0 25px #282828,
+    5px 5px 75px #252525;
     color: #fff;
-    z-index: 100000000;
-    transform: translateX(50%);
     padding: 50px;
-
 }
