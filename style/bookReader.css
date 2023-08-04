@@ -82,6 +82,29 @@ main {
     padding: 20px 0;
 }
 
+.change-page{
+    width: 8%;
+    background-color: var(--dark2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.change-page:hover{
+    opacity: .4;
+}
+
+#next-page{
+    border-radius: 0 15px 15px 0;
+}
+
+#prevouse-page{
+    border-radius: 15px 0 0 15px;
+}
+
 #book {
     width: 80%;
     margin: 0 auto;
@@ -96,7 +119,7 @@ main {
 #page-editing-controls-modal {
     width: 80%;
     position: fixed;
-    top: 50%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--dark3);
