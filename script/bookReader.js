@@ -28,10 +28,15 @@ const bookText = getId('book')
 const changeColorInputs = getClass('.change-color')
 changeColorInputs.forEach(element => {
     element.addEventListener('change', e => {
-        if (e.target.id == "change-fontColor") {
-            bookTextesContainer.style.color = e.target.value
+        const colorValue = e.target.value
+        const target = e.target.dataset.type
+        const revesedColor = reverseColor(colorValue)
+        if (target == "font") {
+            bookTextesContainer.style.color = colorValue
+            bookTextesContainer.style.backgroundColor = revesedColor
         } else {
-            bookTextesContainer.style.backgroundColor = e.target.value
+            bookTextesContainer.style.backgroundColor = colorValue
+            bookTextesContainer.style.color = revesedColor
         }
     })
 });
@@ -55,3 +60,22 @@ const openSettingModal = getId('open-setting')
 const settingModal = getId('page-editing-controls-modal')
 
 openSettingModal.addEventListener('click', () => settingModal.classList.add('show'))
+
+function reverseColor(hexColor) {
+    hexColor = hexColor.replace('#', '');
+
+    var r = parseInt(hexColor.substr(0, 2), 16);
+    var g = parseInt(hexColor.substr(2, 2), 16);
+    var b = parseInt(hexColor.substr(4, 2), 16);
+
+    var invertedR = 255 - r;
+    var invertedG = 255 - g;
+    var invertedB = 255 - b;
+
+    var invertedHexColor = '#' +
+        invertedR.toString(16).padStart(2, '0') +
+        invertedG.toString(16).padStart(2, '0') +
+        invertedB.toString(16).padStart(2, '0');
+
+    return invertedHexColor;
+}

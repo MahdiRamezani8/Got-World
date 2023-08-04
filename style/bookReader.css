@@ -14,11 +14,7 @@ header {
     padding: 0 20px;
 }
 
-header>nav>i {
-    cursor: pointer;
-}
-
-#open-setting{
+#open-setting {
     padding: 3px 40px;
     padding-top: 8px;
     border-radius: 3px;
@@ -27,12 +23,12 @@ header>nav>i {
     transition: .3s;
 }
 
-#open-setting:hover{
+#open-setting:hover {
     background-color: rgba(0, 0, 0, .6);
     color: #fff;
 }
+
 .book-chapters-menu {
-    z-index: 99999 !important;
     width: 40%;
     height: 100lvh;
     padding: 10px 0;
@@ -48,7 +44,7 @@ header>nav>i {
     align-items: center;
 }
 
-header>nav>ul>li {
+#menu-ul>li {
     width: 100%;
     font-family: roboto;
     text-align: center;
@@ -86,27 +82,6 @@ main {
     padding: 20px 0;
 }
 
-.moving-between-pages {
-    position: fixed;
-    top: 55px;
-    width: 10%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.moving-between-pages:hover{
-    background-color: var(--dark2) !important;
-}
-
-.moving-between-pages>i{
-    color: #fff !important;
-    font-size: 50px !important;
-}
-
 #book {
     width: 80%;
     margin: 0 auto;
@@ -114,35 +89,66 @@ main {
     line-height: 30px;
 }
 
-#privous-page {
-    background: linear-gradient(90deg, var(--dark2), #00000000);
-    left: 0;
-}
-
-#next-page {
-    background: linear-gradient(-90deg, var(--dark2), #00000000);
-    right: 0;
-}
-
-.footer-in-book{
+.footer-in-book {
     background-color: var(--dark2);
 }
 
-#page-editing-controls-modal{
+#page-editing-controls-modal {
     width: 80%;
     position: fixed;
-    top: -100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--dark3);
     border-radius: 5px;
     box-shadow: 0 0 25px #282828,
-    5px 5px 75px #252525;
+        5px 5px 75px #252525;
     color: #fff;
-    padding: 50px;
+    padding: 20px;
     transition: .4s;
 }
 
-#page-editing-controls-modal.show{
+#page-editing-controls-modal.show {
     top: 50%;
+}
+
+#modal-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#circles {
+    display: flex;
+    gap: 5px;
+}
+
+.circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.circle:first-child {
+    background-color: red;
+}
+
+.circle:nth-child(2) {
+    background-color: yellow;
+}
+
+.circle:last-child {
+    background-color: green;
+}
+
+#controls {
+    width: 100%;
+}
+
+.control{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
 }

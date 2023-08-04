@@ -47,6 +47,10 @@ a {
     cursor: pointer;
 }
 
+i{
+    cursor: pointer;
+}
+
 button,
 input {
     font-size: calc(15px + 0.390625vw) !important;
