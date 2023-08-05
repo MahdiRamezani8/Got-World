@@ -25,21 +25,20 @@ const books = {
 const bookTextesContainer = getTag('main')
 const bookText = getId('book')
 
-const changeColorInputs = getClass('.change-color')
-changeColorInputs.forEach(element => {
-    element.addEventListener('change', e => {
-        const colorValue = e.target.value
-        const target = e.target.dataset.type
-        const revesedColor = reverseColor(colorValue)
-        if (target == "font") {
-            bookText.style.color = colorValue
-            bookTextesContainer.style.backgroundColor = revesedColor
-        } else {
-            bookTextesContainer.style.backgroundColor = colorValue
-            bookText.style.color = revesedColor
-        }
-    })
-});
+function handleColorChange(event, isBackgroundColor) {
+    const colorValue = event.target.value;
+    const reversedColor = reverseColor(colorValue);
+    bookText.style.color = isBackgroundColor ? reversedColor : colorValue;
+    bookTextesContainer.style.backgroundColor = isBackgroundColor ? colorValue : reversedColor;
+    changeColorInput.value = isBackgroundColor ? reversedColor : colorValue;
+    changeBackgroundColorInput.value = isBackgroundColor ? colorValue : reversedColor;
+}
+
+const changeColorInput = getId("change-fontColor");
+const changeBackgroundColorInput = getId("change-background");
+
+changeBackgroundColorInput.addEventListener("change", event => handleColorChange(event, true));
+changeColorInput.addEventListener("change", event => handleColorChange(event, false));
 
 const changeTextsFont = getId('fonts')
 changeTextsFont.addEventListener('change', e => bookText.style.fontFamily = e.target.value)
