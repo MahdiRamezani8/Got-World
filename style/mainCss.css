@@ -56,6 +56,10 @@ input {
     font-size: calc(15px + 0.390625vw) !important;
 }
 
+#modal.active{
+    top: 50%;
+}
+
 #menu-container {
     position: fixed;
     top: 0;
